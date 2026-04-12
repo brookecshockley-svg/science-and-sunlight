@@ -404,7 +404,7 @@
     <a href="#how">How It Works</a>
     <a href="#about">About</a>
     <a href="#faq">FAQ</a>
-    <a href="mailto:hello@bdone.co">hello@bdone.co</a>
+    <a href="javascript:void(Tawk_API.toggle())"
     <a href="https://www.linkedin.com/in/brooke-shockley-crs" target="_blank">LinkedIn ↗</a>
   </div>
   <div class="footer-copy">© 2026 B.Done. All rights reserved.</div>
