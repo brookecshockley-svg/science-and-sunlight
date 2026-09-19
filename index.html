@@ -228,6 +228,18 @@
   .catalog-item h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; margin: .55rem 0; }
   .catalog-item p { color: rgba(255,255,255,.63); line-height: 1.65; font-size: .94rem; }
 
+  .research-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; margin-top: 2.5rem; }
+  .research-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    padding: 1.35rem;
+    min-height: 210px;
+  }
+  .research-card small { color: var(--clay); letter-spacing: .1em; text-transform: uppercase; font-weight: 800; font-size: .68rem; }
+  .research-card h3 { font-family: 'Playfair Display', serif; font-size: 1.35rem; margin: .65rem 0 .7rem; }
+  .research-card p { color: var(--muted); line-height: 1.7; font-size: .94rem; font-weight: 300; }
+
   .disclaimer {
     border: 1px solid rgba(201,112,79,.24);
     background: rgba(201,112,79,.08);
@@ -269,7 +281,7 @@
   @media (max-width: 860px) {
     nav ul { display: none; }
     .hero { grid-template-columns: 1fr; min-height: auto; }
-    .pillars, .catalog-list { grid-template-columns: 1fr; }
+    .pillars, .catalog-list, .research-grid { grid-template-columns: 1fr; }
     .contact-card { grid-template-columns: 1fr; }
   }
 </style>
@@ -281,6 +293,7 @@
     <ul>
       <li><a href="#standards">Standards</a></li>
       <li><a href="#catalog">Catalog</a></li>
+      <li><a href="#research">Research</a></li>
       <li><a href="#quality">Quality</a></li>
       <li><a class="nav-cta" href="mailto:info@scienceandsunlight.com">Contact</a></li>
     </ul>
@@ -345,6 +358,18 @@
       <p class="section-label">Quality posture</p>
       <h2 class="section-title">Clear information first, polished commerce second.</h2>
       <p class="section-copy">Before expanding into full shopping functionality, Science &amp; Sunlight can use this page as a trustworthy landing point for the new domain, company email, and future catalog launch.</p>
+    </section>
+
+    <section class="section" id="research">
+      <p class="section-label">Research library</p>
+      <h2 class="section-title">A home for peptide articles, references, and research notes.</h2>
+      <p class="section-copy">This section can grow into the Science &amp; Sunlight education hub, with linked articles, study summaries, ingredient explainers, and research-use reference materials organized in one place.</p>
+      <div class="research-grid">
+        <article class="research-card"><small>Articles</small><h3>Research article links</h3><p>Post study links, plain-English summaries, and notes about what each article does and does not show.</p></article>
+        <article class="research-card"><small>Peptide info</small><h3>Ingredient explainers</h3><p>Create easy reference pages for peptides, mechanisms discussed in literature, testing notes, and documentation status.</p></article>
+        <article class="research-card"><small>Reference materials</small><h3>Schedules &amp; protocols</h3><p>Organize research-use schedule information and protocol links with clear context, citations, and safety disclaimers.</p></article>
+      </div>
+      <div class="disclaimer"><strong>Education note:</strong> Research-library content should be informational only and should not be presented as medical advice, diagnosis, treatment instructions, or human-use directions.</div>
     </section>
 
     <section class="section" id="contact">
